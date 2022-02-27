@@ -12,7 +12,6 @@ public class Course {
         this.barrierCount = barrierCount;
         this.courseLength = courseLength;
 
-        //System.out.println("\nConstructor for HomeWork_01.Course\n");
         this.createCourse(barrierCount);
     }
 
@@ -25,7 +24,7 @@ public class Course {
     }
 
     public String getAllBarriers(){
-        String s = "HomeWork_01.Course length:\t" + courseLength + "\n";
+        String s = "Course length:\t" + courseLength + "\n";
 
         for (int i = 0; i < barriers.length; i++) {
             s += i + ": \t" + barriers[i] + "\n";
@@ -53,6 +52,7 @@ public class Course {
             if (team.isMemberCompleteCourse(i)){
                 team.setMemberResult(i, courseLength / team.getMemberSpeed(i));
             }
+            penalty = 0;
         }
     }
 }
