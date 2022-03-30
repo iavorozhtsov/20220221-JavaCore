@@ -2,7 +2,7 @@ import okhttp3.*;
 
 import java.io.IOException;
 
-public class Main {
+public class HomeWork_06 {
     public static void main(String[] args) throws IOException {
         final String API_KEY = "nWRT4fUP2KGWG92DbLSz2zWDHF3eylwP";
         final String CITY = "295212";
@@ -212,9 +212,6 @@ public class Main {
     }
   ]
 }
- */
-
-*/
  */
     }
 }
