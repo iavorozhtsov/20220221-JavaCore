@@ -51,6 +51,12 @@ public class Weather {
         try {
             resp = okHttpClient.newCall(req).execute();
             respJson = resp.body().string();
+
+            if (om.readTree(respJson).get(0) == null) {
+                System.out.println("City " + city + " was not found.");
+                System.exit(1);
+            }
+
             return om.readTree(respJson)
                     .get(0)
                     .at("/Key").toString().replace("\"","");

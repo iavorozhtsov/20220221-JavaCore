@@ -16,10 +16,8 @@ public class HomeWork_07 {
             if (req.toLowerCase().equals("q")) {
                 break;
             }
-            else {
-                Weather w = new Weather(req);
-                System.out.println(w.getWeather());
-            }
+            Weather w = new Weather(req);
+            System.out.println(w.getWeather());
         }
 
     }
