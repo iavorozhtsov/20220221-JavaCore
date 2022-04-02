@@ -7,12 +7,20 @@ import java.util.Scanner;
 
 public class HomeWork_07 {
     public static void main(String[] args) throws IOException {
+        String req;
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter city name: ");
-        Weather w = new Weather(sc.nextLine());
-
-        System.out.println(w.getWeather());
+        while (true) {
+            System.out.print("For exit enter 'Q' else enter city name: ");
+            req = sc.nextLine();
+            if (req.toLowerCase().equals("q")) {
+                break;
+            }
+            else {
+                Weather w = new Weather(req);
+                System.out.println(w.getWeather());
+            }
+        }
 
     }
 }
