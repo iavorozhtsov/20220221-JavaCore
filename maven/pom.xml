@@ -21,15 +21,7 @@
             <artifactId>okhttp</artifactId>
             <version>4.9.3</version>
         </dependency>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    </dependencies>
 
-</project>
-=======
-=======
-
->>>>>>> HomeWork_08
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -46,5 +38,4 @@
 
     </dependencies>
 
-</project> 
->>>>>>> HomeWork_07
+</project>
